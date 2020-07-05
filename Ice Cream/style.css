@@ -1,1 +1,129 @@
 
+:root {
+    --ice-cream-color: #FCB8C3;
+    --ice-cream-color1: #5DE37E;
+    --ripple-color: #FC889B;
+    --ripple-color1: #00C693;
+    --cone-color: #F7C077;
+    --waffle-color: #F3A63A;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background:  lightskyblue;
+}
+
+.box-canvas{
+    position: relative;
+    margin: auto;
+    display: block;
+    width: 200px;
+}
+
+.cone{
+    position: absolute;
+    width: 120px;
+    height: 220px;
+    top: 350px;
+    left: 74px;
+    transform: translate(-50%);
+    background: var(--cone-color);
+   background: repeating-linear-gradient(
+    45deg,
+    var(--cone-color),
+    var(--cone-color) 20px,
+    var(--waffle-color) 20px,
+    var(--waffle-color) 25px
+    );
+    clip-path: polygon(49% 100%, 0 0, 100% 0);
+}
+
+.cone::before {
+    content: '';
+    width: 120px;
+    height: 210px;
+    position: absolute;
+    background: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    var(--cone-color) 20px,
+    var(--waffle-color) 20px,
+    var(--waffle-color) 25px
+    );
+}
+
+.scoop{
+    position: absolute;
+    background: var(--ice-cream-color);
+    width: 150px;
+    height: 150px;
+    top: 230px;
+    border-radius: 50%;
+    border-bottom: 1px solid var(--ripple-color);
+}
+
+.scoop::before{
+    content: '';
+    position: absolute;
+    transform: rotate(-20deg);
+    width: 130px;
+    height: 100px;
+    top: 15px;
+    border-radius: 50%;
+    box-shadow: 0px 10px 0px 0px var(--ripple-color);
+}
+.scoop::after{
+    content: '';
+    position: absolute;
+    transform: rotate(-20deg);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 10px 0px 0px var(--ripple-color);
+}
+
+.scoop1{
+    position: absolute;
+    background: var(--ice-cream-color1);
+    width: 150px;
+    height: 150px;
+    top: 150px;
+    border-radius: 50%;
+    border-bottom: 1px solid var(--ripple-color1);
+}
+
+.scoop1::before{
+    content: '';
+    position: absolute;
+    transform: rotate(-20deg);
+    width: 130px;
+    height: 100px;
+    top: 15px;
+    border-radius: 50%;
+    box-shadow: 0px 10px 0px 0px var(--ripple-color1);
+}
+
+.drip{
+    position: absolute;
+    background: var(--ice-cream-color);
+    width: 20px;
+    height: 20px;
+    left: 50px;
+    top: 380px;
+    border-radius: 0 0 50% 50%;
+    border-left: 2px solid var(--ripple-color);
+    border-bottom: 1px solid var(--ripple-color);
+}
+
+.drip::after{
+    content: '';
+    position: absolute;
+    background: var(--ice-cream-color);
+    height: 40px;
+    width: 15px;
+    left: 25px;
+    border-radius: 0 0 50% 50%;
+    border-left: 3px solid var(--ripple-color);
+    border-bottom: 1px solid var(--ripple-color);
+}
