@@ -29,7 +29,7 @@ body{
     left: 74px;
     transform: translate(-50%);
     background: var(--cone-color);
-   background: repeating-linear-gradient(
+    background: repeating-linear-gradient(
     45deg,
     var(--cone-color),
     var(--cone-color) 20px,

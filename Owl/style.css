@@ -1,0 +1,54 @@
+:root{
+    --background-color:#97A3AB;
+    --dark-brown: #6D4B27;
+    --light-brown: #9E784D;
+     --orange: #F0AE1B;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+.box-canvas{
+    position: relative;
+    margin: auto;
+    display: block;
+    width: 600px;
+    
+}
+
+.wings{
+    position: absolute;
+    background: var(--dark-brown);
+    width: 280px;
+    height: 350px;
+    border-radius: 50%;
+    top: 250px;
+    left: 200px;
+}
+
+.wings::before{
+    content: '';
+    position: absolute;
+    background: var(--light-brown);
+    width: 220px;
+    height: 315px;
+    top: 40px;
+    left: 32px;
+    border-radius: 50%;
+}
+
+.wings::after{
+    content: '';
+    position: absolute;
+    background: white;
+    width: 140px;
+    height: 240px;
+    top: 50px;
+    left: 70px;
+    border-radius: 50%;
+}
+
+
