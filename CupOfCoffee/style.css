@@ -1,0 +1,119 @@
+:root {
+    --mug-color: #FFF4F4;
+    --chamomile-color: #F4C17F;
+    --background-color: #FFFFFF;
+    --vapour-color: rgba(244, 193, 127, 0.5);
+    --dark-detail-color: #60557C;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--background-color);
+}
+
+.box-canvas{
+    position: relative;
+    margin: auto;
+    display: block;
+    width: 600px;
+    height: 600px;
+    background: var(--background-color);
+}
+
+.mug-body{
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    top: 300px;
+    background: var(--mug-color);
+    border-radius: 10% 10% 40% 40%;
+}
+
+
+.mug-body {
+    position: absolute;
+    left: 190px;
+    top: 200px;
+    width: 220px;
+    height: 220px;
+    background: var(--mug-color);
+    border-radius: 0 0 40% 40%;
+  }
+  
+  /* Tea at the top of the mug */
+  .mug-body::before {
+    content: '';
+    position: absolute;
+    top: -45px;
+    left: 0;
+    width: 180px;
+    height: 50px;
+    border-radius: 50%;
+    border: 20px solid var(--mug-color);
+    background: var(--chamomile-color);
+    
+  }
+
+  .design{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    top: -20px;
+    left: 90px;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+
+  
+  .vapour {
+    position: absolute;
+    height: 100px;
+    width: 50px;
+    border-radius: 50%;
+  }
+  
+  .left-vapour {
+    left: 200px;
+    top: -30px;
+    border-right: 20px solid var(--vapour-color);
+  }
+  
+  .vapour::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 50px;
+    border-radius: 50%;
+  }
+  
+  .left-vapour::after {
+    top: 85px;
+    left: 27px;
+    border-left: 20px solid var(--vapour-color);
+  }
+  
+  .right-vapour {
+    left: 253px;
+    top: 20px;
+    border-right: 20px solid var(--vapour-color);
+  }
+  
+  .right-vapour::after {
+    top: -65px;
+    left: 80px;
+    border-left: 20px solid var(--vapour-color);
+  }
+  
+  .right-vapour::before {
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 50px;
+    border-radius: 50%;
+    top: 20px;
+    left: 55px;
+    border-right: 20px solid var(--vapour-color);
+  }
+  
