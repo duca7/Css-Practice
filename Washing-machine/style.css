@@ -139,7 +139,9 @@
   
   
   @keyframes drumRotate {
-    
+    0%{
+      transform: none;
+    }
     100% {
       transform: rotate(360deg);
     }
