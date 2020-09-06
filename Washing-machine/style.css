@@ -58,7 +58,7 @@
   /* Small LED display */
   .panel {
     position: absolute;
-    width: 40px;
+    width: 48px;
     height: 15px;
     background: var(--darkest-gray);
     left: 150px;
@@ -72,8 +72,24 @@
     width: 8px;
     height: 10px;
     background: var(--accent-green);
-    right: 5px;
+    left: 2px;
     top: 2px;
+    animation: run 6s infinite alternate;
+  }
+
+  @keyframes run{
+    0%{
+      left: 2px;
+    }
+    33%{
+      left: 12px;
+    }
+    66%{
+      left: 24px;
+    }
+    100%{
+      left: 36px;
+    }
   }
   
   /* Machine dial */
@@ -123,6 +139,7 @@
     background: var(--darkest-gray);
     overflow: hidden;
     animation: drumRotate 2s infinite;
+    animation-timing-function: linear;
   }
   
   /* Clothes inside machine */
