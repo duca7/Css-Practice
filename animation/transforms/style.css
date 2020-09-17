@@ -1,0 +1,29 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: lightskyblue;
+}
+
+.container{
+    box-sizing: content-box;
+}
+
+img{
+    width:  9rem;
+    height: 9rem;
+    padding: 5rem;
+}
+
+.img1{
+    transform: translate(3rem, 4rem);
+}
+.img2{
+    transform: scale(1.5, 2);
+}
+.img3{
+    transform: rotate( 180deg);
+}
+
+.img4{
+    transform: skew(30deg, 10deg);
+}
