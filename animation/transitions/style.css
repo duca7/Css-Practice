@@ -1,0 +1,39 @@
+body{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+div{
+    width: 5rem;
+    height: 4rem;
+    background-color: aqua;
+    transition: width 2s;
+    text-align: center;
+    padding-top: 1.6rem;
+}
+.div1:hover{
+    width: 20rem;
+    transition-timing-function: linear;
+    cursor: pointer;
+}
+.div2:hover{
+    width: 20rem;
+    transition-timing-function: ease;
+    cursor: pointer;
+}
+.div3:hover{
+    width: 20rem;
+    transition-timing-function: ease-in;
+    cursor: pointer;
+}
+.div4:hover{
+    width: 20rem;
+    transition-timing-function: ease-out;
+    cursor: pointer;
+}
+.div5:hover{
+    width: 20rem;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
