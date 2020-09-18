@@ -37,3 +37,8 @@ div{
     transition-timing-function: ease-in-out;
     cursor: pointer;
 }
+.div6:hover{
+    width: 20rem;
+    transition-delay: 1s;
+    cursor: pointer;
+}
