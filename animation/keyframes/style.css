@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    text-align: center;
+    font-weight: 600;
+    
+}
+
+.slider{
+    width: 15rem;
+    height: 10rem;
+    background-image: url(./img/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    margin: 0 auto;
+    animation: 15s slide infinite ;
+    
+}
+
+@keyframes slide{
+    0%{
+        background-image: url(./img/2.jpg);
+    }
+    100%{
+        background-image: url(./img/duck.jpg);
+    }
+}
