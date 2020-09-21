@@ -8,3 +8,13 @@ body{
     background-color: var(--background-color);
 }
 
+.bb-8{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 240px;
+    height: 326px;
+ 
+    background-color: aquamarine;
+    transform: translate(-50%, -50%);
+}
