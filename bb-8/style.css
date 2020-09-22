@@ -6,6 +6,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
+    box-sizing: border-box;
 }
 
 .bb-8{
@@ -14,7 +15,26 @@ body{
     left: 50%;
     width: 240px;
     height: 326px;
- 
-    background-color: aquamarine;
     transform: translate(-50%, -50%);
 }
+
+.bb-8__head__antenna{
+    width: 4px;
+  height: 20px;
+  background-color: #D3D3D3;
+  position: absolute;
+  top: -18px;
+  left: 120px;
+  border-radius: 3px;
+}
+
+.bb-8__head__antenna--longer{
+  width: 4px;
+  height: 30px;
+  background-color: #D3D3D3;
+  position: absolute;
+  top: -25px;
+  left: 130px;
+  border-radius: 3px;
+}
+
