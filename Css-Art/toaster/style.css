@@ -111,3 +111,25 @@ body{
 }
 
 
+.handle2{
+    position: relative;
+    background-color: #666666;
+    width: 30px;
+    height: 20px;
+    bottom: 14px;
+    left:30px ;
+    border-radius:20px;
+    animation: 10s move infinite;
+}
+
+.handle3{
+    position: relative;
+    background-color: #000000;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    bottom: 34px;
+    left:40px ;
+    animation: 10s move infinite;
+}
+
