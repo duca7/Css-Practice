@@ -64,3 +64,50 @@ body{
     left: 40%;
 }
 
+.shine{
+    position: relative;
+    height: 24px;
+    width: 50px;
+    background-color: #e6f7ff;
+    border-radius: 50%;
+    transform: rotate(-30deg);
+    left: 2%;
+    bottom: 44%;
+}
+
+.slot1{
+    position: relative;
+    background-color: #666666;
+    height: 100px;
+    width: 10px;
+    border-radius: 15px;
+    bottom: 141.5px;
+    left: 88%;
+}
+
+.slot2{
+    position: relative;
+    background-color: #333333;
+    height: 100px;
+    width: 10px;
+    border-radius: 15px;
+    bottom: 242px;
+    left: 87%;
+}
+
+.handle1{
+    position: relative;
+    background-color: white;
+    width: 40px;
+    height: 10px;
+    top: 2px;
+    animation: 10s move infinite;
+}
+
+@keyframes move{
+    50%{
+        transform: translateY(85px);
+    }
+}
+
+
