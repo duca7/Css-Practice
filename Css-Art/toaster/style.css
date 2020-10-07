@@ -22,7 +22,7 @@ body{
     right: 0;
 }
 
-.toaster{
+.toaster-machine{
     background-color: var(--toast-color);
     height: 190px;
     width: 320px;
@@ -133,3 +133,131 @@ body{
     animation: 10s move infinite;
 }
 
+.base1{
+    position: relative;
+    background-color: #666666;
+    width: 322px;
+    height: 30px;
+    bottom: 210px;
+    right: 65px;
+    border-radius: 5px;
+}
+
+.base2{
+    position: relative;
+    background-color: #666666;
+    width: 68px;
+    height: 30px;
+    bottom: 240px;
+    left: 252px;
+}
+
+.toaster-leg1,.toaster-leg2,.toaster-leg3,.toaster-leg4{
+    position: relative;
+    background-color:#666666;
+    width: 20px;
+    height:30px;
+    border-radius: 2px;
+}
+
+.toaster-leg1{
+    bottom: 240px;
+    right: 50px;
+}
+
+.toaster-leg2{
+    bottom: 270px;
+    right: 5px;
+}
+
+.toaster-leg3{
+    bottom: 300px;
+    left: 290px;
+}
+
+.toaster-leg4{
+    bottom: 330px;
+    left: 240px;
+}
+
+.toastl1{
+    background-color: #cc8800;
+    width: 180px;
+    height:35px;
+    border-radius: 15px;
+    position: relative;
+    left: 160px;
+    z-index: -1;
+    bottom: 170px;
+    animation:10s toast infinite ;
+}
+
+@keyframes toast{
+    50%{
+        transform: translateY(160px);
+    }
+}
+
+.toastl2{
+    background-color: #cc8800;
+    width: 150px;
+    height: 145px;
+    position: relative;
+    top: 5px;
+    left: 14px;
+}
+.toastu1{
+    background-color: #ffd480;
+    height:25px;
+    width: 160px;
+    border-radius: 15px;
+    position: relative;
+    bottom: 140px;
+    left: 10px;
+}
+.toastu2{
+    background-color: #ffd480;
+    width: 130px;
+    height: 120px;
+    position: relative;
+    bottom: 150px;
+    left: 25px;
+}
+
+.toastl3{
+    background-color: #cc8800;
+    width: 180px;
+    height:35px;
+    border-radius: 15px;
+    position: relative;
+    left: 210px;
+    z-index: -2;
+    bottom: 190px;
+    animation:10s toast infinite ;
+}
+
+.toastl4{
+    background-color: #cc8800;
+    width: 150px;
+    height: 145px;
+    position: relative;
+}
+
+.toastu3{
+    background-color: #ffd480;
+    height:25px;
+    width: 160px;
+    border-radius: 15px;
+    position: relative;
+    bottom: 140px;
+    left: 13px;
+}
+
+.toastu4{
+    background-color: #ffd480;
+    width: 130px;
+    height: 120px;
+    position: relative;
+    bottom: 150px;
+    left: 10px;
+}
