@@ -1,3 +1,1 @@
-This practice  i want to try draw something with Html and Css. It's fun and exciting. I can learn a lot  css variable...
-Thank you to visit my practice.  
-
+Css-Pratice is where I try to try my myself with css
