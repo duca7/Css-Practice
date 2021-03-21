@@ -1,28 +1,31 @@
 :root {
-    --background-color: #FFE694;
+    --background-color: #A9CEC2;
     --machine-white: white;
     --machine-feature-gray: #A3A1A1;
-    --accent-green: #5FBD9D;
+    --accent-green: #D6F4FF;
     --darkest-gray: #636161;
-  }
-  
-  body{
+}
+
+body {
     background: var(--background-color);
     width: 100%;
     height: 100%;
-  }
-  
-  .box-canvas{
+    overflow: hidden;
+}
+
+.container {
     position: relative;
     margin: 0 auto;
     display: block;
     width: 600px;
-    height:600px;
+    height: 600px;
     background: var(--background-color);
-  }
-  
-  /* Main machine body */
-  .machine {
+}
+
+
+/* Main machine body */
+
+.machine {
     position: absolute;
     left: 150px;
     top: 100px;
@@ -30,10 +33,12 @@
     height: 400px;
     background: var(--machine-white);
     border-radius: 2%;
-  }
-  
-  /* Powder drawer */
-  .drawer {
+}
+
+
+/* Powder drawer */
+
+.drawer {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -41,10 +46,12 @@
     height: 50px;
     border: 2px solid var(--machine-feature-gray);
     border-radius: 0 0 20% 0;
-  }
-  
-  /* Drawer handle */
-  .drawer::after {
+}
+
+
+/* Drawer handle */
+
+.drawer::after {
     content: '';
     position: absolute;
     width: 70px;
@@ -53,20 +60,24 @@
     bottom: 5px;
     right: 5px;
     border-radius: 0 0 30% 0;
-  }
-  
-  /* Small LED display */
-  .panel {
+}
+
+
+/* Small LED display */
+
+.panel {
     position: absolute;
     width: 48px;
     height: 15px;
     background: var(--darkest-gray);
     left: 150px;
     top: 30px;
-  }
-  
-  /* Light indicator in panel */
-  .panel::before {
+}
+
+
+/* Light indicator in panel */
+
+.panel::before {
     content: '';
     position: absolute;
     width: 8px;
@@ -75,25 +86,27 @@
     left: 2px;
     top: 2px;
     animation: run 6s infinite alternate;
-  }
+}
 
-  @keyframes run{
-    0%{
-      left: 2px;
+@keyframes run {
+    0% {
+        left: 2px;
     }
-    33%{
-      left: 12px;
+    33% {
+        left: 12px;
     }
-    66%{
-      left: 24px;
+    66% {
+        left: 24px;
     }
-    100%{
-      left: 36px;
+    100% {
+        left: 36px;
     }
-  }
-  
-  /* Machine dial */
-  .panel::after {
+}
+
+
+/* Machine dial */
+
+.panel::after {
     content: '';
     position: absolute;
     left: 80px;
@@ -102,10 +115,12 @@
     height: 35px;
     border: 2px solid var(--machine-feature-gray);
     border-radius: 50%;
-  }
-  
-  /* Center of washer door, width border forming the frame */
-  .door {
+}
+
+
+/* Center of washer door, width border forming the frame */
+
+.door {
     position: absolute;
     background: var(--machine-white);
     left: 60px;
@@ -115,10 +130,12 @@
     border-radius: 50%;
     border: 5px solid var(--machine-feature-gray);
     overflow: hidden;
-  }
-  
-  /* Reflection on door surface */
-  .door::after {
+}
+
+
+/* Reflection on door surface */
+
+.door::after {
     content: '';
     position: absolute;
     top: 5px;
@@ -126,10 +143,12 @@
     width: 160px;
     height: 160px;
     background: radial-gradient(transparent 30%, white);
-  }
-  
-  /* Washing machine drum */
-  .drum {
+}
+
+
+/* Washing machine drum */
+
+.drum {
     position: absolute;
     left: 25px;
     top: 25px;
@@ -140,10 +159,12 @@
     overflow: hidden;
     animation: drumRotate 2s infinite;
     animation-timing-function: linear;
-  }
-  
-  /* Clothes inside machine */
-  .drum::before {
+}
+
+
+/* Clothes inside machine */
+
+.drum::before {
     content: '';
     position: absolute;
     width: 80px;
@@ -151,15 +172,51 @@
     background: var(--accent-green);
     border-radius: 40%;
     bottom: 0;
-  }
-  
-  
-  
-  @keyframes drumRotate {
-    0%{
-      transform: none;
+}
+
+@keyframes drumRotate {
+    0% {
+        transform: none;
     }
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
+}
+
+.pure-water {
+    position: absolute;
+    width: 80px;
+    height: 50px;
+    border: 2px solid var(--machine-feature-gray);
+    top: 340px;
+    left: 210px;
+    border-radius: 10px;
+}
+
+.btn {
+    position: absolute;
+    width: 25px;
+    height: 5px;
+    background-color: var(--machine-feature-gray);
+    top: 0px;
+    left: 30px;
+    border-radius: 10px 10px;
+}
+
+.foot {
+    position: absolute;
+    width: 25px;
+    height: 10px;
+    border-radius: 40px;
+    background-color: #636161;
+}
+
+.foot-left {
+    top: 400px;
+    left: 15px;
+}
+
+.foot-right {
+    top: 400px;
+    right: 15px;
+}
